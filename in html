@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptie Spel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Encryptie Spel</h1>
+    <form id="encrypt-form">
+        <label for="direction">Kies actie:</label>
+        <select id="direction" name="direction">
+            <option value="encode">Versleutelen</option>
+            <option value="ontcijfer">Ontcijferen</option>
+        </select>
+        <br><br>
+
+        <label for="text">Bericht:</label>
+        <input type="text" id="text" name="text" required>
+        <br><br>
+
+        <label for="shift">Verschuiving:</label>
+        <input type="number" id="shift" name="shift" min="1" max="25" required>
+        <br><br>
+
+        <input type="submit" value="Verstuur">
+    </form>
+
+    <h2>Resultaat:</h2>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
